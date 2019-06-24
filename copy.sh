@@ -1,11 +1,11 @@
 #!/bin/bash
 
-STATES_FILE="../map_sovereignity/ne_10m_admin_0_sovereignty.shp"
+STATES_FILE="../map_countries/ne_10m_admin_0_countries.shp"
 PLACES_FILE="../map_places/ne_10m_populated_places.shp"
 
 for i in "$@"
 do
-    SOVER_FILE="sovereignty.json"
+    SOVER_FILE="country.json"
     PLACE_FILE="places.json"
 
     ogr2ogr \
