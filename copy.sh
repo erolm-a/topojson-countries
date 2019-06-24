@@ -5,8 +5,8 @@ PLACES_FILE="../map_places/ne_10m_populated_places.shp"
 
 for i in "$@"
 do
-    SOVER_FILE="$i-sover.json"
-    PLACE_FILE="$i-places.json"
+    SOVER_FILE="sovereignty.json"
+    PLACE_FILE="places.json"
 
     ogr2ogr \
         -f GeoJSON \
